@@ -1,1 +1,1 @@
-works: mix phx.server
+web: mix phx.server
