@@ -10,7 +10,7 @@ defmodule Api.Blog.User do
     field :email, :string
     field :name, :string
     field :password, :string
-    field :posts_number, :integer
+    field :posts_number, :integer, default: 0
 
     has_many :posts, Api.Blog.Post
 
