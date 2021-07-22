@@ -2,6 +2,11 @@ defmodule Api.Blog.Users.Create do
   def call(params) do
     params
     |> Api.Blog.User.changeset()
-    |> Api.Repo.insert()
+    |> case do
+      data when data.valid? == true ->
+        Api.Repo.insert(data)
+      data ->
+        {:error, data}
+    end
   end
 end

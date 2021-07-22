@@ -46,7 +46,6 @@ defmodule Api.MixProject do
       {:absinthe, "~> 1.5"},
       {:absinthe_plug, "~> 1.5"},
       {:cors_plug, "~> 2.0"}
-      # {:broadway_kafka, "~> 0.1.0"}
     ]
   end
 
